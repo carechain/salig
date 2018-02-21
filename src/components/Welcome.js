@@ -34,7 +34,7 @@ class Welcome extends Component {
     return (
       <WelcomeWrap>
         <h4>Electronic Health Record</h4>
-        <SubText>CareChain XClaim Identity demo</SubText>
+        <SubText>a template</SubText>
         <ConnectUport
           onClick={this.connectUport}>
           Connect
