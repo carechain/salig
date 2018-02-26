@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { uport } from '../utilities/uportSetup'
 
 // Actions
 import * as AppActions from '../actions/AppActions'
@@ -10,8 +11,9 @@ import styled from 'styled-components'
 
 const NavBar = styled.nav`
   color: #FFFFFF;
+  background: #000000;
   padding: 20px 40px;
-  font-size: 18px;
+  font-size: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,17 +56,17 @@ const UportAvatar = styled.img`
 `
 
 class AppNavbar extends Component {
+
   render () {
     return (
       <NavBar>
 
         <LeftArea>
-          <LogoLink href='/'>xclaim</LogoLink>
-          <span> | </span>
-          <DemoText>EHR</DemoText>
         </LeftArea>
 
         <RightArea>
+   
+
           {
             this.props.uport !== null &&
             this.props.uport !== undefined &&

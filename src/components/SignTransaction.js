@@ -17,12 +17,14 @@ const SharesWrap = styled.section`
     position: inherit;
   }
 `
-const SharesArea = styled.div``
+const SharesArea = styled.div`
+font-size: 28px;
+`
 const CurrentSharesArea = styled.div`
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 `
 const CurrentSharesNumber = styled.span`
-  color: white;
+  color: red;
 `
 const FormBuyshares = styled.form``
 const FormRow = styled.div``
@@ -91,12 +93,10 @@ class SignTransaction extends Component {
   render () {
     return (
       <SharesWrap>
-        <h4>Sign a transaction</h4>
-        <SubText>Buy Shares</SubText>
-
+        <h4>Buy CareCoins</h4>
         <SharesArea>
           <CurrentSharesArea >
-            <span>Your current shares: </span>
+            <span>You currently have : </span>
             <br />
             <CurrentSharesNumber>{this.props.sharesTotal}</CurrentSharesNumber>
           </CurrentSharesArea>
@@ -117,7 +117,7 @@ class SignTransaction extends Component {
               : (
                 <FormBuyshares>
                   <FormRow>
-                    <label>Shares to Buy: </label>
+                    <label>CareCoins to buy: </label>
                     <input
                       id='sharesInput'
                       type='number'
@@ -129,7 +129,7 @@ class SignTransaction extends Component {
                     <br />
                     <BtnBuyShares
                       onClick={this.buyShares}>
-                      Buy Shares
+                      Buy CareCoins
                     </BtnBuyShares>
                   </FormRow>
                   <FormRow>

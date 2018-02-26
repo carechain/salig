@@ -12,6 +12,19 @@ const SubText = styled.p`
   margin: 0 auto 3em auto;
   font-size: 18px;
 `
+const NavBar = styled.nav`
+color: #000000;
+padding: 20px 40px;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: right;
+text-align: right;
+vertical-align-items: top;
+vertical-align: top;
+`
+
+
 
 class Welcome extends Component {
 
@@ -22,7 +35,7 @@ class Welcome extends Component {
 
   connectUport () {
     uport.requestCredentials(
-      { requested: ['name', 'phone', 'country', 'avatar'],
+      { requested: ['name', 'country'],
         notifications: true }
     ).then((credentials) => {
         console.log({credentials})
@@ -32,14 +45,15 @@ class Welcome extends Component {
 
   render () {
     return (
-      <WelcomeWrap>
-        <h4>Electronic Health Record</h4>
-        <SubText>a template</SubText>
-        <ConnectUport
+    <WelcomeWrap>
+            <img src="/min-doktor.png" width="400px"></img>
+      <NavBar>
+         <ConnectUport
           onClick={this.connectUport}>
-          Connect
+          Logga in
         </ConnectUport>
-      </WelcomeWrap>
+      </NavBar>
+    </WelcomeWrap>
     )
   }
 }

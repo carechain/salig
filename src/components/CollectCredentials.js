@@ -14,6 +14,7 @@ const CredentialsWrap = styled.section`
   }
 `
 const CredentialsArea = styled.section`
+  font-size: 28px;
   text-align: center;
 `
 const CredsTable = styled.table`

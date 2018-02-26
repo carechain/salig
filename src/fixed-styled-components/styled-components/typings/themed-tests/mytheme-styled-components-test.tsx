@@ -6,7 +6,7 @@ import styled, { css, keyframes, ThemeProvider, injectGlobal, MyTheme } from "./
 // centered, palevioletred and sized at 1.5em
 const Title = styled.h1`
   font-size: 1.5em;
-  text-align: center;
+  // text-align: center;
   color: ${p => p.theme.primaryColor};
 `;
 
