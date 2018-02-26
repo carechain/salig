@@ -10,7 +10,7 @@ const WelcomeWrap = styled.section``
 const ConnectUport = styled.button``
 const SubText = styled.p`
   margin: 0 auto 3em auto;
-  font-size: 18px;
+  font-size: 24px;
 `
 const NavBar = styled.nav`
 color: #000000;
@@ -47,6 +47,7 @@ class Welcome extends Component {
     return (
     <WelcomeWrap>
             <img src="/min-doktor.png" width="400px"></img>
+            <SubText>Trygg vård när du behöver det</SubText>
       <NavBar>
          <ConnectUport
           onClick={this.connectUport}>
