@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		044D23092045F6F7001D4EF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0490B98120442D60006453D4 /* Shares.sol */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shares.sol; sourceTree = "<group>"; };
 		0490B98220442D60006453D4 /* store.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = store.js; sourceTree = "<group>"; };
 		0490B98320442D60006453D4 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
@@ -317,6 +318,7 @@
 		0490B97820442D34006453D4 = {
 			isa = PBXGroup;
 			children = (
+				044D23092045F6F7001D4EF7 /* README.md */,
 				0490BACD2044326B006453D4 /* public */,
 				0490BACC20442D61006453D4 /* index.html */,
 				0490B97F20442D60006453D4 /* src */,

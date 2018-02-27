@@ -1,5 +1,7 @@
 # uPort Demo
 
+Take not of the automatically generated name and URL.
+
 ### About
 This uPort demo is designed to showcase some of the basic features and approaches you will take to integrate uPort features into your project. Using [uport-connect](https://github.com/uport-project/uport-connect) itself is quite simple but requires a little bit of understanding the flow for a typical implementation.
 
@@ -88,3 +90,15 @@ To deploy to **demo.uport.space**
 ```
 npm run deploy-test
 ```
+
+### Heroku Deployment
+
+All the instructions above are still valid. To deploy to heroku (for free):
+
+```
+$ heroku login
+$ heroku init
+$ git commit -a -m"first commit" (if you did any changes)
+$ git push heroku master
+```
+
