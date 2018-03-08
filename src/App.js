@@ -11,6 +11,7 @@ import styled from 'styled-components'
 import AppNavbar from './components/AppNavbar'
 import Welcome from './components/Welcome'
 import SignTransaction from './components/SignTransaction'
+import RequestConsent from './components/RequestConsent'
 import CollectCredentials from './components/CollectCredentials'
 import RegisterYourApp from './components/RegisterYourApp'
 import LogOut from './components/LogOut'
@@ -52,9 +53,15 @@ class App extends Component {
           }
           {
             this.props.collectCredentialsPage &&
+            !this.props.requestConsentPage
+            ? <CollectCredentials />
+            : null
+          }
+          {
+            this.props.requestConsentPage &&
             !this.props.registerYourAppPage
-              ? <CollectCredentials />
-              : null
+            ? <RequestConsent />
+            : null
           }
           {
             this.props.registerYourAppPage &&
@@ -77,6 +84,7 @@ const mapStateToProps = (state, props) => {
   return {
     uport: state.App.uport,
     signTransactionPage: state.App.signTransactionPage,
+    requestConsentPage: state.App.requestConsentPage,
     collectCredentialsPage: state.App.collectCredentialsPage,
     registerYourAppPage: state.App.registerYourAppPage,
     logOutPage: state.App.logOutPage

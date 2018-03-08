@@ -46,8 +46,8 @@ class Welcome extends Component {
   render () {
     return (
     <WelcomeWrap>
-            <img src="/min-doktor.png" width="400px"></img>
-            <SubText>Trygg vård när du behöver det</SubText>
+            <img src="/salig.png" width="400px"></img>
+            <SubText>Vård i hemmet</SubText>
       <NavBar>
          <ConnectUport
           onClick={this.connectUport}>

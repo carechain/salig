@@ -65,11 +65,16 @@ export default(state = initialState, payload) => {
         collectCredentialsPage: true
       }
 
-    case 'CREDENTIALS_DEMO_COMPLETE':
-      return {
-        ...state,
-        registerYourAppPage: true
-      }
+      case 'CREDENTIALS_DEMO_COMPLETE':
+          return {
+              ...state,
+          requestConsentPage: true
+          }
+      case 'REQUEST_CONSENT_DEMO_COMPLETE':
+          return {
+              ...state,
+          registerYourAppPage: true
+          }
     case 'LOGOUT':
       return {
         ...state,

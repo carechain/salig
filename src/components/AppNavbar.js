@@ -63,9 +63,7 @@ class AppNavbar extends Component {
 
         <LeftArea>
         </LeftArea>
-
         <RightArea>
-   
 
           {
             this.props.uport !== null &&
